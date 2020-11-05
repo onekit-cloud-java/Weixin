@@ -364,9 +364,9 @@ public abstract class WeixinAPI {
 
     //////////////////////////////////////////////////////
 
-    public abstract activityid$create_response activityid$create(String access_token, String unionid);
+    public abstract cgi_bin$message$wxopen$activityid$create_response cgi_bin$message$wxopen$activityid$create(String access_token, String unionid);
 
-    public static class activityid$create_response{
+    public static class cgi_bin$message$wxopen$activityid$create_response{
         private String activity_id;
         private long errcode;
         private long expiration_time;
@@ -427,9 +427,9 @@ public abstract class WeixinAPI {
         }
     }
 
-    public abstract updatablemsg$send_response updatablemsg$send(String access_token,updatablemsg$send_body body);
+    public abstract cgi_bin$message$wxopen$updatablemsg$send_response cgi_bin$message$wxopen$updatablemsg$send(String access_token,updatablemsg$send_body body);
 
-    public static class updatablemsg$send_response{
+    public static class cgi_bin$message$wxopen$updatablemsg$send_response{
         private long errcode;
         private String errmsg;
 
@@ -473,9 +473,9 @@ public abstract class WeixinAPI {
         }
     }
 
-    public abstract wxaapp$createwxaqrcode_response wxaapp$createwxaqrcode(String access_token,wxaapp$createwxaqrcode_body body);
+    public abstract cgi_bin$wxaapp$createwxaqrcode_response cgi_bin$wxaapp$createwxaqrcode(String access_token,wxaapp$createwxaqrcode_body body);
 
-    public static class wxaapp$createwxaqrcode_response{
+    public static class cgi_bin$wxaapp$createwxaqrcode_response{
         private Buffer iamge;
         private long errcode;
         private String errmsg;
@@ -1029,9 +1029,9 @@ public abstract class WeixinAPI {
         }
     }
 
-    public abstract subscribe$send_response subscribe$send(String access_token,subscribe$send_body body);
+    public abstract cgi_bin$message$subscribe$send_response cgi_bin$message$subscribe$send(String access_token,subscribe$send_body body);
 
-    public static class subscribe$send_response{
+    public static class cgi_bin$message$subscribe$send_response{
         private long errcode;
         private String errmsg;
 

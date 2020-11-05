@@ -129,8 +129,19 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class wxa$img_sec_check_body{
+        private Media media;
 
-    public abstract wxa$img_sec_check_response wxa$img_sec_check(String access_token, Media media);
+        public Media getMedia() {
+            return media;
+        }
+
+        public void setMedia(Media media) {
+            this.media = media;
+        }
+    }
+
+    public abstract wxa$img_sec_check_response wxa$img_sec_check(String access_token,wxa$img_sec_check_body body);
 
     public static class wxa$img_sec_check_response{
         private long errcode;
@@ -154,7 +165,28 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
-    public abstract wxa$media_check_async_response wxa$media_check_async(String access_token,String media_url,String media_type);
+    public static class wxa$media_check_async_body{
+        private String media_url;
+        private String media_type;
+
+        public String getMedia_url() {
+            return media_url;
+        }
+
+        public void setMedia_url(String media_url) {
+            this.media_url = media_url;
+        }
+
+        public String getMedia_type() {
+            return media_type;
+        }
+
+        public void setMedia_type(String media_type) {
+            this.media_type = media_type;
+        }
+    }
+
+    public abstract wxa$media_check_async_response wxa$media_check_async(String access_token,wxa$media_check_async_body body);
 
     public static class wxa$media_check_async_response{
         private String trace_id;
@@ -187,8 +219,19 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class wxa$msg_sec_check_body{
+        private String content;
 
-    public abstract wxa$msg_sec_check_response wxa$msg_sec_check(String access_token,String content);
+        public String getContent() {
+            return content;
+        }
+
+        public void setContent(String content) {
+            this.content = content;
+        }
+    }
+
+    public abstract wxa$msg_sec_check_response wxa$msg_sec_check(String access_token, wxa$msg_sec_check_body body);
 
     public static class wxa$msg_sec_check_response{
         private long errcode;
@@ -211,8 +254,19 @@ public abstract class WeixinAPI {
         }
     }
     //////////////////////////////////////////////////////
+    public static class wxa$remove_user_storage_body{
+        private String key;
 
-    public abstract wxa$remove_user_storage_response wxa$remove_user_storage(String access_token,String openid,String signature,String sig_method,String key);
+        public String getKey() {
+            return key;
+        }
+
+        public void setKey(String key) {
+            this.key = key;
+        }
+    }
+
+    public abstract wxa$remove_user_storage_response wxa$remove_user_storage(String access_token,String openid,String signature,String sig_method,wxa$remove_user_storage_body body);
 
     public static class wxa$remove_user_storage_response{
         private long errcode;
@@ -236,8 +290,19 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class wxa$setuserinteractivedata_body{
+        private List<kv_list> Kv_list;
 
-    public abstract wxa$setuserinteractivedata_response wxa$setuserinteractivedata(String access_token, String openid, String signature, String sig_method, List<kv_list> Kv_list);
+        public List<kv_list> getKv_list() {
+            return Kv_list;
+        }
+
+        public void setKv_list(List<kv_list> kv_list) {
+            Kv_list = kv_list;
+        }
+    }
+
+    public abstract wxa$setuserinteractivedata_response wxa$setuserinteractivedata(String access_token, String openid, String signature, String sig_method, wxa$setuserinteractivedata_body body);
 
     public static class wxa$setuserinteractivedata_response{
         private long errcode;
@@ -262,8 +327,19 @@ public abstract class WeixinAPI {
 
 
     //////////////////////////////////////////////////////
+    public static class wxa$set_user_storage_body{
+        private List<kv_list> Kv_list;
 
-    public abstract wxa$set_user_storage_response wxa$set_user_storage(String access_token, String openid, String signature, String sig_method, List<kv_list> Kv_list);
+        public List<kv_list> getKv_list() {
+            return Kv_list;
+        }
+
+        public void setKv_list(List<kv_list> kv_list) {
+            Kv_list = kv_list;
+        }
+    }
+
+    public abstract wxa$set_user_storage_response wxa$set_user_storage(String access_token, String openid, String signature, String sig_method, wxa$set_user_storage_body body);
 
     public static class wxa$set_user_storage_response{
         private long errcode;
@@ -321,8 +397,37 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class updatablemsg$send_body{
+        private  String activity_id;
+        private int target_state;
+        private  List<parameter_list> template_info;
 
-    public abstract updatablemsg$send_response updatablemsg$send(String access_token, String activity_id,int target_state,List<parameter_list> template_info);
+        public String getActivity_id() {
+            return activity_id;
+        }
+
+        public void setActivity_id(String activity_id) {
+            this.activity_id = activity_id;
+        }
+
+        public int getTarget_state() {
+            return target_state;
+        }
+
+        public void setTarget_state(int target_state) {
+            this.target_state = target_state;
+        }
+
+        public List<parameter_list> getTemplate_info() {
+            return template_info;
+        }
+
+        public void setTemplate_info(List<parameter_list> template_info) {
+            this.template_info = template_info;
+        }
+    }
+
+    public abstract updatablemsg$send_response updatablemsg$send(String access_token,updatablemsg$send_body body);
 
     public static class updatablemsg$send_response{
         private long errcode;
@@ -347,7 +452,28 @@ public abstract class WeixinAPI {
 
     //////////////////////////////////////////////////////
 
-    public abstract wxaapp$createwxaqrcode_response wxaapp$createwxaqrcode(String access_token, String path,long width);
+    public static class wxaapp$createwxaqrcode_body{
+        private String path;
+        private  long width;
+
+        public String getPath() {
+            return path;
+        }
+
+        public void setPath(String path) {
+            this.path = path;
+        }
+
+        public long getWidth() {
+            return width;
+        }
+
+        public void setWidth(long width) {
+            this.width = width;
+        }
+    }
+
+    public abstract wxaapp$createwxaqrcode_response wxaapp$createwxaqrcode(String access_token,wxaapp$createwxaqrcode_body body);
 
     public static class wxaapp$createwxaqrcode_response{
         private Buffer iamge;
@@ -380,8 +506,55 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class wxa$getwxacode_body{
+        private String path;
+        private long width;
+        private boolean auto_color;
+        private line_color line_color;
+        private boolean is_hyaline;
 
-    public abstract wxa$getwxacode_response wxa$getwxacode(String access_token, String path,long width,boolean auto_color,line_color line_color,boolean is_hyaline);
+        public String getPath() {
+            return path;
+        }
+
+        public void setPath(String path) {
+            this.path = path;
+        }
+
+        public long getWidth() {
+            return width;
+        }
+
+        public void setWidth(long width) {
+            this.width = width;
+        }
+
+        public boolean isAuto_color() {
+            return auto_color;
+        }
+
+        public void setAuto_color(boolean auto_color) {
+            this.auto_color = auto_color;
+        }
+
+        public com.qq.weixin.api.line_color getLine_color() {
+            return line_color;
+        }
+
+        public void setLine_color(com.qq.weixin.api.line_color line_color) {
+            this.line_color = line_color;
+        }
+
+        public boolean isIs_hyaline() {
+            return is_hyaline;
+        }
+
+        public void setIs_hyaline(boolean is_hyaline) {
+            this.is_hyaline = is_hyaline;
+        }
+    }
+
+    public abstract wxa$getwxacode_response wxa$getwxacode(String access_token,wxa$getwxacode_body body);
 
     public static class wxa$getwxacode_response{
         private long errcode;
@@ -406,8 +579,64 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class wxa$getwxacodeunlimit_body{
+        private String scene;
+        private String page;
+        private long width;
+        private boolean auto_color;
+        private line_color line_color;
+        private boolean is_hyaline;
 
-    public abstract wxa$getwxacodeunlimit_response wxa$getwxacodeunlimit(String access_token, String scene,String page,long width,boolean auto_color,line_color line_color,boolean is_hyaline);
+        public String getScene() {
+            return scene;
+        }
+
+        public void setScene(String scene) {
+            this.scene = scene;
+        }
+
+        public String getPage() {
+            return page;
+        }
+
+        public void setPage(String page) {
+            this.page = page;
+        }
+
+        public long getWidth() {
+            return width;
+        }
+
+        public void setWidth(long width) {
+            this.width = width;
+        }
+
+        public boolean isAuto_color() {
+            return auto_color;
+        }
+
+        public void setAuto_color(boolean auto_color) {
+            this.auto_color = auto_color;
+        }
+
+        public com.qq.weixin.api.line_color getLine_color() {
+            return line_color;
+        }
+
+        public void setLine_color(com.qq.weixin.api.line_color line_color) {
+            this.line_color = line_color;
+        }
+
+        public boolean isIs_hyaline() {
+            return is_hyaline;
+        }
+
+        public void setIs_hyaline(boolean is_hyaline) {
+            this.is_hyaline = is_hyaline;
+        }
+    }
+
+    public abstract wxa$getwxacodeunlimit_response wxa$getwxacodeunlimit(String access_token,wxa$getwxacodeunlimit_body body);
 
     public static class wxa$getwxacodeunlimit_response{
         private Buffer iamge;
@@ -440,8 +669,64 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class datacube$getgameanalysisdata_body{
+        private String metric;
+        private long granularity;
+        private long start_time;
+        private long end_time;
+        private filter_list filter_list;
+        private List<String> group_list;
 
-    public abstract datacube$getgameanalysisdata_response datacube$getgameanalysisdata(String metric, long granularity,long start_time,long end_time,filter_list filter_list,List<String> group_list,String access_token);
+        public String getMetric() {
+            return metric;
+        }
+
+        public void setMetric(String metric) {
+            this.metric = metric;
+        }
+
+        public long getGranularity() {
+            return granularity;
+        }
+
+        public void setGranularity(long granularity) {
+            this.granularity = granularity;
+        }
+
+        public long getStart_time() {
+            return start_time;
+        }
+
+        public void setStart_time(long start_time) {
+            this.start_time = start_time;
+        }
+
+        public long getEnd_time() {
+            return end_time;
+        }
+
+        public void setEnd_time(long end_time) {
+            this.end_time = end_time;
+        }
+
+        public com.qq.weixin.api.filter_list getFilter_list() {
+            return filter_list;
+        }
+
+        public void setFilter_list(com.qq.weixin.api.filter_list filter_list) {
+            this.filter_list = filter_list;
+        }
+
+        public List<String> getGroup_list() {
+            return group_list;
+        }
+
+        public void setGroup_list(List<String> group_list) {
+            this.group_list = group_list;
+        }
+    }
+
+    public abstract datacube$getgameanalysisdata_response datacube$getgameanalysisdata(String access_token,datacube$getgameanalysisdata_body body);
 
     public static class datacube$getgameanalysisdata_response{
         private long errcode;
@@ -468,9 +753,91 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class wxa$createwxagameroom_body{
+        private long game_tick;
+        private List<String> open_id_list;
+        private long udp_reliability_strategy;
+        private long end_time;
+        private long start_percent;
+        private boolean need_user_info;
+        private long game_last_time;
+        private String room_ext_info;
+        private boolean need_game_seed;
 
-    public abstract wxa$createwxagameroom_response wxa$createwxagameroom(String access_token, long game_tick,List<String> open_id_list,long udp_reliability_strategy,
-                                                                         long start_percent,boolean need_user_info,long game_last_time,String room_ext_info,boolean need_game_seed);
+        public long getGame_tick() {
+            return game_tick;
+        }
+
+        public void setGame_tick(long game_tick) {
+            this.game_tick = game_tick;
+        }
+
+        public List<String> getOpen_id_list() {
+            return open_id_list;
+        }
+
+        public void setOpen_id_list(List<String> open_id_list) {
+            this.open_id_list = open_id_list;
+        }
+
+        public long getUdp_reliability_strategy() {
+            return udp_reliability_strategy;
+        }
+
+        public void setUdp_reliability_strategy(long udp_reliability_strategy) {
+            this.udp_reliability_strategy = udp_reliability_strategy;
+        }
+
+        public long getEnd_time() {
+            return end_time;
+        }
+
+        public void setEnd_time(long end_time) {
+            this.end_time = end_time;
+        }
+
+        public long getStart_percent() {
+            return start_percent;
+        }
+
+        public void setStart_percent(long start_percent) {
+            this.start_percent = start_percent;
+        }
+
+        public boolean isNeed_user_info() {
+            return need_user_info;
+        }
+
+        public void setNeed_user_info(boolean need_user_info) {
+            this.need_user_info = need_user_info;
+        }
+
+        public long getGame_last_time() {
+            return game_last_time;
+        }
+
+        public void setGame_last_time(long game_last_time) {
+            this.game_last_time = game_last_time;
+        }
+
+        public String getRoom_ext_info() {
+            return room_ext_info;
+        }
+
+        public void setRoom_ext_info(String room_ext_info) {
+            this.room_ext_info = room_ext_info;
+        }
+
+        public boolean isNeed_game_seed() {
+            return need_game_seed;
+        }
+
+        public void setNeed_game_seed(boolean need_game_seed) {
+            this.need_game_seed = need_game_seed;
+        }
+    }
+
+    public abstract wxa$createwxagameroom_response wxa$createwxagameroom(String access_token,wxa$createwxagameroom_body body);
 
     public static class wxa$createwxagameroom_response{
         private long errcode;
@@ -605,8 +972,64 @@ public abstract class WeixinAPI {
     }
 
     //////////////////////////////////////////////////////
+    public static class subscribe$send_body{
+        private String touser;
+        private String template_id;
+        private String page;
+        private data data;
+        private String miniprogram_state;
+        private String lang;
 
-    public abstract subscribe$send_response subscribe$send(String access_token,String touser,String template_id,String page,data data,String miniprogram_state,String lang);
+        public String getTouser() {
+            return touser;
+        }
+
+        public void setTouser(String touser) {
+            this.touser = touser;
+        }
+
+        public String getTemplate_id() {
+            return template_id;
+        }
+
+        public void setTemplate_id(String template_id) {
+            this.template_id = template_id;
+        }
+
+        public String getPage() {
+            return page;
+        }
+
+        public void setPage(String page) {
+            this.page = page;
+        }
+
+        public com.qq.weixin.api.data getData() {
+            return data;
+        }
+
+        public void setData(com.qq.weixin.api.data data) {
+            this.data = data;
+        }
+
+        public String getMiniprogram_state() {
+            return miniprogram_state;
+        }
+
+        public void setMiniprogram_state(String miniprogram_state) {
+            this.miniprogram_state = miniprogram_state;
+        }
+
+        public String getLang() {
+            return lang;
+        }
+
+        public void setLang(String lang) {
+            this.lang = lang;
+        }
+    }
+
+    public abstract subscribe$send_response subscribe$send(String access_token,subscribe$send_body body);
 
     public static class subscribe$send_response{
         private long errcode;

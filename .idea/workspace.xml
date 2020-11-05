@@ -30,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ToutiaoSDK" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -61,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604557193298</updated>
       <workItem from="1604557195208" duration="6000" />
-      <workItem from="1604557224933" duration="9576000" />
+      <workItem from="1604557224933" duration="12318000" />
     </task>
     <servers />
   </component>

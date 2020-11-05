@@ -6,6 +6,18 @@ import java.util.List;
 
 public abstract class WeixinAPI {
 
+    public class data {
+        private String access_info;
+
+        public String getAccess_info() {
+            return access_info;
+        }
+
+        public void setAccess_info(String access_info) {
+            this.access_info = access_info;
+        }
+    }
+
 
     //////////////////////////////////////////////////////
     public abstract cgi_bin$token_response cgi_bin$token(String grant_type,String appid,String secret);
@@ -844,11 +856,11 @@ public abstract class WeixinAPI {
         private String errmsg;
         private data data;
 
-        public com.qq.weixin.api.data getData() {
+        public WeixinAPI.data getData() {
             return data;
         }
 
-        public void setData(com.qq.weixin.api.data data) {
+        public void setData(WeixinAPI.data data) {
             this.data = data;
         }
 
@@ -878,11 +890,11 @@ public abstract class WeixinAPI {
         private String errmsg;
         private data data;
 
-        public com.qq.weixin.api.data getData() {
+        public WeixinAPI.data getData() {
             return data;
         }
 
-        public void setData(com.qq.weixin.api.data data) {
+        public void setData(WeixinAPI.data data) {
             this.data = data;
         }
 
@@ -908,15 +920,16 @@ public abstract class WeixinAPI {
     public abstract wxa$getwxagameidentityinfo_response wxa$getwxagameidentityinfo(String access_token,String access_info);
 
     public static class wxa$getwxagameidentityinfo_response{
+
         private long errcode;
         private String errmsg;
         private data data;
 
-        public com.qq.weixin.api.data getData() {
+        public WeixinAPI.data getData() {
             return data;
         }
 
-        public void setData(com.qq.weixin.api.data data) {
+        public void setData(WeixinAPI.data data) {
             this.data = data;
         }
 
@@ -946,11 +959,11 @@ public abstract class WeixinAPI {
         private String errmsg;
         private data data;
 
-        public com.qq.weixin.api.data getData() {
+        public WeixinAPI.data getData() {
             return data;
         }
 
-        public void setData(com.qq.weixin.api.data data) {
+        public void setData(WeixinAPI.data data) {
             this.data = data;
         }
 
@@ -1004,11 +1017,11 @@ public abstract class WeixinAPI {
             this.page = page;
         }
 
-        public com.qq.weixin.api.data getData() {
+        public WeixinAPI.data getData() {
             return data;
         }
 
-        public void setData(com.qq.weixin.api.data data) {
+        public void setData(WeixinAPI.data data) {
             this.data = data;
         }
 

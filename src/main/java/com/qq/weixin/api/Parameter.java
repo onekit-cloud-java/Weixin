@@ -1,15 +1,15 @@
 package com.qq.weixin.api;
 
-public class filter_list {
-    private String dimension;
+public class Parameter {
+    private String name;
     private String value;
 
-    public String getDimension() {
-        return dimension;
+    public String getName() {
+        return name;
     }
 
-    public void setDimension(String dimension) {
-        this.dimension = dimension;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getValue() {

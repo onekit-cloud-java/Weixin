@@ -1,10 +1,10 @@
 package com.qq.weixin.api;
 
-import java.nio.Buffer;
+
 
 public class Media {
     private String contentType;
-    private Buffer value;
+    private byte[] value;
 
     public String getContentType() {
         return contentType;
@@ -14,11 +14,11 @@ public class Media {
         this.contentType = contentType;
     }
 
-    public Buffer getValue() {
+    public byte[] getValue() {
         return value;
     }
 
-    public void setValue(Buffer value) {
+    public void setValue(byte[] value) {
         this.value = value;
     }
 }

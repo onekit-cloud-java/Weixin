@@ -1,6 +1,6 @@
 package com.qq.weixin.api;
 
-public class line_color {
+public class GRB {
     private int r,g,b;
 
     public int getR() {

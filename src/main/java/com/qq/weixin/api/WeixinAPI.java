@@ -6,7 +6,7 @@ import java.util.List;
 
 public abstract class WeixinAPI {
 
-    public static abstract class Response {
+    public static class Response {
         private long errcode;
         private String errmsg;
 
@@ -142,7 +142,7 @@ public abstract class WeixinAPI {
     //////////////////////////////////////////////////////
     public static class wxa$media_check_async_body{
         private String media_url;
-        private String media_type;
+        private int media_type;
 
         public String getMedia_url() {
             return media_url;
@@ -152,11 +152,11 @@ public abstract class WeixinAPI {
             this.media_url = media_url;
         }
 
-        public String getMedia_type() {
+        public int getMedia_type() {
             return media_type;
         }
 
-        public void setMedia_type(String media_type) {
+        public void setMedia_type(int media_type) {
             this.media_type = media_type;
         }
     }

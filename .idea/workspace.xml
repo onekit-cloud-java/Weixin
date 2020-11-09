@@ -42,7 +42,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WeixinSDK" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TheKit" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -84,7 +84,7 @@
       <workItem from="1604642821518" duration="18000" />
       <workItem from="1604656067741" duration="899000" />
       <workItem from="1604887758821" duration="117000" />
-      <workItem from="1604889179856" duration="4049000" />
+      <workItem from="1604889179856" duration="15807000" />
     </task>
     <servers />
   </component>

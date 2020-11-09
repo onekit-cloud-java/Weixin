@@ -1,6 +1,7 @@
 package com.qq.weixin.api;
 
 import java.nio.Buffer;
+import java.util.HashMap;
 import java.util.List;
 
 public abstract class WeixinAPI {
@@ -175,13 +176,13 @@ public abstract class WeixinAPI {
     }
     //////////////////////////////////////////////////////
     public static class wxa$remove_user_storage_body{
-        private String key;
+        private List<String> key;
 
-        public String getKey() {
+        public List<String> getKey() {
             return key;
         }
 
-        public void setKey(String key) {
+        public void setKey(List<String> key) {
             this.key = key;
         }
     }
@@ -477,14 +478,16 @@ public abstract class WeixinAPI {
     //////////////////////////////////////////////////////
     public static class subscribe$send_body{
         public static class data {
-            private String access_info;
+            public static class DataValue{
+                private String value;
 
-            public String getAccess_info() {
-                return access_info;
-            }
+                public String getValue() {
+                    return value;
+                }
 
-            public void setAccess_info(String access_info) {
-                this.access_info = access_info;
+                public void setValue(String value) {
+                    this.value = value;
+                }
             }
 
 
@@ -492,7 +495,7 @@ public abstract class WeixinAPI {
         private String touser;
         private String template_id;
         private String page;
-        private data data;
+        private HashMap<String, subscribe$send_body.data.DataValue> data;
         private String miniprogram_state;
         private String lang;
 
@@ -520,11 +523,11 @@ public abstract class WeixinAPI {
             this.page = page;
         }
 
-        public data getData() {
+        public HashMap<String, subscribe$send_body.data.DataValue> getData() {
             return data;
         }
 
-        public void setData(data data) {
+        public void setData(HashMap<String, subscribe$send_body.data.DataValue> data) {
             this.data = data;
         }
 

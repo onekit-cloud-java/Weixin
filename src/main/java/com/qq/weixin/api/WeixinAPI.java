@@ -6,7 +6,6 @@ import java.util.List;
 
 public abstract class WeixinAPI {
 
-
     public static abstract class Response {
         private long errcode;
         private String errmsg;
@@ -28,10 +27,32 @@ public abstract class WeixinAPI {
         }
     }
 
-    //////////////////////////////////////////////////////
-    public abstract cgi_bin$token_response cgi_bin$token(String grant_type,String appid,String secret);
 
-    public static class cgi_bin$token_response extends Response{
+    public static abstract class errcode extends Exception{
+        private long errcode;
+        private String errmsg;
+
+        public long getErrcode() {
+            return errcode;
+        }
+
+        public void setErrcode(long errcode) {
+            this.errcode = errcode;
+        }
+
+        public String getErrmsg() {
+            return errmsg;
+        }
+
+        public void setErrmsg(String errmsg) {
+            this.errmsg = errmsg;
+        }
+    }
+
+    //////////////////////////////////////////////////////
+    public abstract cgi_bin$token_response cgi_bin$token(String grant_type,String appid,String secret) throws errcode;
+
+    public static class cgi_bin$token_response {
         private String access_token;
         private long expires_in;
 

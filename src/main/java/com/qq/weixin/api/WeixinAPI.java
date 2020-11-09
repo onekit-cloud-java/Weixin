@@ -1,5 +1,5 @@
 package com.qq.weixin.api;
-
+import com.google.gson.JsonObject;
 import com.qq.weixin.api.entity.*;
 
 public interface  WeixinAPI {
@@ -7,7 +7,7 @@ public interface  WeixinAPI {
      String _crypto(String sig_method, String session_key, String data) throws Exception;
     cgi_bin__token_response cgi_bin__token(String grant_type, String appid, String secret) throws WeixinError;
 
-    WeixinResponse wxa__checksession(String access_token, String openid, String signature, String sig_method);
+    WeixinResponse wxa__checksession(String access_token, String openid, String signature, String sig_method, String body);
 
     snc__jscode2session_response snc__jscode2session(String appid, String secret, String js_code, String grant_type);
 

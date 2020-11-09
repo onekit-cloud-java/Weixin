@@ -1,4 +1,4 @@
-package com.qq.weixin.api;
+package com.qq.weixin.api.entity;
 
 public class Parameter {
     private String name;

@@ -4,6 +4,7 @@ import com.qq.weixin.api.entity.*;
 
 public interface  WeixinAPI {
 
+     String _crypto(String sig_method, String session_key, String data) throws Exception;
     cgi_bin__token_response cgi_bin__token(String grant_type, String appid, String secret) throws WeixinError;
 
     WeixinResponse wxa__checksession(String access_token, String openid, String signature, String sig_method);

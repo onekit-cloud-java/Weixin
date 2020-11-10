@@ -27,7 +27,7 @@ public interface  WeixinAPI {
 
     WeixinResponse cgi_bin__message__wxopen__updatablemsg__send(String access_token, updatablemsg__send_body body);
 
-    cgi_bin__wxaapp__createwxaqrcode_response cgi_bin__wxaapp__createwxaqrcode(String access_token, wxaapp__createwxaqrcode_body body);
+    byte[] cgi_bin__wxaapp__createwxaqrcode(String access_token, wxaapp__createwxaqrcode_body body) throws WeixinError;
 
     WeixinResponse wxa__getwxacode(String access_token, wxa__getwxacode_body body);
 

@@ -4,7 +4,7 @@ public  class wxa__getwxacode_body{
     private String path;
     private long width;
     private boolean auto_color;
-    private GRB line_color;
+    private RGB line_color;
     private boolean is_hyaline;
 
     public String getPath() {
@@ -31,11 +31,11 @@ public  class wxa__getwxacode_body{
         this.auto_color = auto_color;
     }
 
-    public GRB getLine_color() {
+    public RGB getLine_color() {
         return line_color;
     }
 
-    public void setLine_color(GRB line_color) {
+    public void setLine_color(RGB line_color) {
         this.line_color = line_color;
     }
 

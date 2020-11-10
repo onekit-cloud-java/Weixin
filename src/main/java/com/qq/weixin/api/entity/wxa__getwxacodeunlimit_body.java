@@ -6,7 +6,7 @@ public  class wxa__getwxacodeunlimit_body{
     private String page;
     private long width;
     private boolean auto_color;
-    private GRB line_color;
+    private RGB line_color;
     private boolean is_hyaline;
 
     public String getScene() {
@@ -41,11 +41,11 @@ public  class wxa__getwxacodeunlimit_body{
         this.auto_color = auto_color;
     }
 
-    public GRB getLine_color() {
+    public RGB getLine_color() {
         return line_color;
     }
 
-    public void setLine_color(GRB line_GBcolor) {
+    public void setLine_color(RGB line_color) {
         this.line_color = line_color;
     }
 

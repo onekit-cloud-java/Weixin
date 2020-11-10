@@ -2,7 +2,7 @@ package com.qq.weixin.api.entity;
 
 import java.io.Serializable;
 
-public class GRB implements Serializable {
+public class RGB implements Serializable {
     private Integer r,g,b;
 
     public Integer getR() {

@@ -1,29 +1,31 @@
 package com.qq.weixin.api.entity;
 
-public class GRB {
-    private int r,g,b;
+import java.io.Serializable;
 
-    public int getR() {
+public class GRB implements Serializable {
+    private Integer r,g,b;
+
+    public Integer getR() {
         return r;
     }
 
-    public void setR(int r) {
+    public void setR(Integer r) {
         this.r = r;
     }
 
-    public int getG() {
+    public Integer getG() {
         return g;
     }
 
-    public void setG(int g) {
+    public void setG(Integer g) {
         this.g = g;
     }
 
-    public int getB() {
+    public Integer getB() {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(Integer b) {
         this.b = b;
     }
 

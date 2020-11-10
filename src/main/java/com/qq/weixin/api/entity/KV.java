@@ -2,17 +2,18 @@ package com.qq.weixin.api.entity;
 
 import java.io.Serializable;
 
-public class KV implements Serializable {
-    public KV(String key, String value){
+public class KV <T> {
+    public KV(String key, T value){
         this.key=key;
         this.value=value;
     }
-    private String key, value;
+    private String key;
+    private T value;
 
     public String getKey() {
         return key;
     }
-    public String getValue() {
+    public T getValue() {
         return value;
     }
 }

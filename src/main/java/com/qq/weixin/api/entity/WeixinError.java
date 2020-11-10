@@ -1,6 +1,6 @@
 package com.qq.weixin.api.entity;
 
-public class WeixinError extends Throwable {
+public class WeixinError extends Exception {
     private long errcode;
     private String errmsg;
 

@@ -1,6 +1,6 @@
 package com.qq.weixin.api.entity;
 
-public class cgi_bin__token_response {
+public class cgi_bin__token_response extends WeixinResponse{
     private String access_token;
     private long expires_in;
 

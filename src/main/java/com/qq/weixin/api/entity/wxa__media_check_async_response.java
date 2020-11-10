@@ -1,6 +1,6 @@
 package com.qq.weixin.api.entity;
 
-public class wxa__media_check_async_response {
+public class wxa__media_check_async_response extends WeixinResponse{
     private String trace_id;
 
     public String getTrace_id() {

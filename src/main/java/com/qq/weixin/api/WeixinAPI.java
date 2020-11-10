@@ -1,5 +1,5 @@
 package com.qq.weixin.api;
-import com.google.gson.JsonObject;
+
 import com.qq.weixin.api.entity.*;
 
 public interface  WeixinAPI {

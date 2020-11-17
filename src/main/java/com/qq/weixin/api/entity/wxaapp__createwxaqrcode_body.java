@@ -3,7 +3,7 @@ package com.qq.weixin.api.entity;
 
 public  class wxaapp__createwxaqrcode_body{
     private String path;
-    private  long width;
+    private  int width;
 
     public String getPath() {
         return path;
@@ -13,11 +13,11 @@ public  class wxaapp__createwxaqrcode_body{
         this.path = path;
     }
 
-    public long getWidth() {
+    public int getWidth() {
         return width;
     }
 
-    public void setWidth(long width) {
+    public void setWidth(int width) {
         this.width = width;
     }
 }

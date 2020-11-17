@@ -2,7 +2,7 @@ package com.qq.weixin.api.entity;
 
 public class cgi_bin__token_response extends WeixinResponse{
     private String access_token;
-    private long expires_in;
+    private int expires_in;
 
     public String getAccess_token() {
         return access_token;
@@ -12,11 +12,11 @@ public class cgi_bin__token_response extends WeixinResponse{
         this.access_token = access_token;
     }
 
-    public long getExpires_in() {
+    public int getExpires_in() {
         return expires_in;
     }
 
-    public void setExpires_in(long expires_in) {
+    public void setExpires_in(int expires_in) {
         this.expires_in = expires_in;
     }
 }

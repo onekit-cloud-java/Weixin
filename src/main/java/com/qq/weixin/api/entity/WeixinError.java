@@ -1,14 +1,14 @@
 package com.qq.weixin.api.entity;
 
 public class WeixinError extends Exception {
-    private long errcode;
+    private int errcode;
     private String errmsg;
 
-    public long getErrcode() {
+    public int getErrcode() {
         return errcode;
     }
 
-    public void setErrcode(long errcode) {
+    public void setErrcode(int errcode) {
         this.errcode = errcode;
     }
 

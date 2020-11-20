@@ -2,7 +2,7 @@ package com.qq.weixin.api.entity;
 
 import java.util.HashMap;
 
-public  class subscribe__send_body{
+public  class cgi_bin__message__subscribe__send_body{
     public static class Data {
         public static class DataValue{
             private String value;
@@ -21,7 +21,7 @@ public  class subscribe__send_body{
     private String touser;
     private String template_id;
     private String page;
-    private HashMap<String, subscribe__send_body.Data.DataValue> data;
+    private HashMap<String, Data.DataValue> data;
     private String miniprogram_state;
     private String lang;
 
@@ -49,11 +49,11 @@ public  class subscribe__send_body{
         this.page = page;
     }
 
-    public HashMap<String, subscribe__send_body.Data.DataValue> getData() {
+    public HashMap<String, Data.DataValue> getData() {
         return data;
     }
 
-    public void setData(HashMap<String, subscribe__send_body.Data.DataValue> data) {
+    public void setData(HashMap<String, Data.DataValue> data) {
         this.data = data;
     }
 

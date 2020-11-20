@@ -47,5 +47,5 @@ public interface  WeixinAPI {
 
     byte[] wxa__getwxacodeunlimit(String wx_access_token, wxa__getwxacodeunlimit_body wx_body)throws WeixinError;
 
-    WeixinResponse cgi_bin__message__subscribe__send(String wx_access_token, subscribe__send_body wx_body);
+    WeixinResponse cgi_bin__message__subscribe__send(String wx_access_token, cgi_bin__message__subscribe__send_body wx_body);
 }

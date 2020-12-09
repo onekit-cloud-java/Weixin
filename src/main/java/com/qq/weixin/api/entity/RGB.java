@@ -1,7 +1,7 @@
 package com.qq.weixin.api.entity;
 
 import java.io.Serializable;
-
+@SuppressWarnings("unused")
 public class RGB implements Serializable {
     private Integer r,g,b;
 

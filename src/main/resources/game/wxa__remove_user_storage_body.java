@@ -1,7 +1,7 @@
 package com.qq.weixin.api.entity;
 
 import java.util.List;
-
+@SuppressWarnings("unused")
 public class wxa__remove_user_storage_body {
     private List<String> key;
 

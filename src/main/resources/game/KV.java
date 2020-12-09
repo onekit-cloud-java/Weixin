@@ -1,7 +1,7 @@
 package com.qq.weixin.api.entity;
 
-import java.io.Serializable;
 
+@SuppressWarnings("unused")
 public class KV <T> {
     public KV(String key, T value){
         this.key=key;

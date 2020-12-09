@@ -1,5 +1,5 @@
 package com.qq.weixin.api.entity;
-
+@SuppressWarnings("unused")
 public class cgi_bin__message__wxopen__activityid__create_response {
     private String activity_id;
     private int errcode;

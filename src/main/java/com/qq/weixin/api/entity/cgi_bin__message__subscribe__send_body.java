@@ -1,11 +1,12 @@
 package com.qq.weixin.api.entity;
 
 import java.util.HashMap;
-
+@SuppressWarnings("unused")
 public  class cgi_bin__message__subscribe__send_body{
     public static class Data {
         public static class DataValue{
             private String value;
+
 
             public String getValue() {
                 return value;

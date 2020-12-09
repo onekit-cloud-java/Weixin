@@ -1,6 +1,6 @@
 package com.qq.weixin.api.entity;
 
-
+@SuppressWarnings("unused")
 public  class wxaapp__createwxaqrcode_body{
     private String path;
     private  int width;

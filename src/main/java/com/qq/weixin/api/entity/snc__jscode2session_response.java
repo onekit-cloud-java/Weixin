@@ -1,5 +1,5 @@
 package com.qq.weixin.api.entity;
-
+@SuppressWarnings("unused")
 public class snc__jscode2session_response extends WeixinResponse{
     private String openid;
     private String session_key;

@@ -1,5 +1,5 @@
 package com.qq.weixin.api.entity;
-
+@SuppressWarnings("unused")
 public class wxa__media_check_async_body {
     private String media_url;
     private int media_type;

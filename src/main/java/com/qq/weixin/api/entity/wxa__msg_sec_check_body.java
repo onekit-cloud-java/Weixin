@@ -1,5 +1,5 @@
 package com.qq.weixin.api.entity;
-
+@SuppressWarnings("unused")
 public class wxa__msg_sec_check_body {
     private String content;
 

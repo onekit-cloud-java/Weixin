@@ -1,6 +1,6 @@
 package com.qq.weixin.api.entity;
 
-
+@SuppressWarnings("unused")
 public  class wxa__getwxacodeunlimit_body{
     private String scene;
     private String page;

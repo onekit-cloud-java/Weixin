@@ -1,7 +1,7 @@
 package com.qq.weixin.api.entity;
 
 import java.util.List;
-
+@SuppressWarnings("unused")
 public class updatablemsg__send_body {
     private  String activity_id;
     private int target_state;

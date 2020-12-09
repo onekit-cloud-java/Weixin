@@ -1,5 +1,5 @@
 package com.qq.weixin.api.entity;
-
+@SuppressWarnings("unused")
 public  class wxa__getwxacode_body{
     private String path;
     private int width;

@@ -1,5 +1,5 @@
 package com.qq.weixin.api.entity;
-
+@SuppressWarnings("unused")
 public class WeixinResponse {
     private int errcode;
     private String errmsg;

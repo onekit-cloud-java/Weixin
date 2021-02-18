@@ -1,6 +1,6 @@
-package com.qq.weixin.api.entity;
-@SuppressWarnings("unused")
-public class cgi_bin__token_response extends WeixinResponse{
+package com.qq.weixin.api.response;
+
+public class GetAccessTokenResponse extends WeixinError {
     private String access_token;
     private int expires_in;
 

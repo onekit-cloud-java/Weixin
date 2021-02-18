@@ -1,6 +1,6 @@
-package com.qq.weixin.api.entity;
-@SuppressWarnings("unused")
-public class snc__jscode2session_response extends WeixinResponse{
+package com.qq.weixin.api.response;
+
+public class Code2SessionResponse extends WeixinError {
     private String openid;
     private String session_key;
     private String unionid;
@@ -28,4 +28,5 @@ public class snc__jscode2session_response extends WeixinResponse{
     public void setUnionid(String unionid) {
         this.unionid = unionid;
     }
+
 }

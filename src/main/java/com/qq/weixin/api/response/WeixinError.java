@@ -1,4 +1,4 @@
-package com.qq.weixin.api.entity;
+package com.qq.weixin.api.response;
 @SuppressWarnings("unused")
 public class WeixinError extends Exception {
     private int errcode;

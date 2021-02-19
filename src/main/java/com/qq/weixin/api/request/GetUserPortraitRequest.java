@@ -1,6 +1,7 @@
 package com.qq.weixin.api.request;
 
-public class GetMonthlyRetainRequset {
+@SuppressWarnings("unused")
+public class GetUserPortraitRequest {
     private String access_token;
     private String begin_date;
     private String end_date;

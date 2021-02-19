@@ -1,5 +1,7 @@
 package com.qq.weixin.api.response;
 
+import com.qq.weixin.api.WeixinError;
+@SuppressWarnings("unused")
 public class Code2SessionResponse extends WeixinError {
     private String openid;
     private String session_key;

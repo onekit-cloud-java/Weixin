@@ -1,6 +1,6 @@
 package com.qq.weixin.api.request;
 @SuppressWarnings("unused")
-public class GetDailyRetainRequest {
+public class GetMonthlyRetainRequest {
     private String access_token;
     private String begin_date;
     private String end_date;

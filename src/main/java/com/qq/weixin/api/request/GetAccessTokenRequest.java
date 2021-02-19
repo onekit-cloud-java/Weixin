@@ -1,5 +1,5 @@
 package com.qq.weixin.api.request;
-
+@SuppressWarnings("unused")
 public class GetAccessTokenRequest {
     private String appid;
     private String secret;

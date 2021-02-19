@@ -1,5 +1,5 @@
 package com.qq.weixin.api.request;
-
+@SuppressWarnings("unused")
 public class GetPaidUnionIdRequest {
     private String access_token;
     private String openid;

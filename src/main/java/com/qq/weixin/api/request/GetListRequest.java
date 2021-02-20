@@ -1,6 +1,6 @@
 package com.qq.weixin.api.request;
 
-
+@SuppressWarnings("unused")
 public class GetListRequest {
     private String access_token;
     private int page;

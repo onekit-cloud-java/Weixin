@@ -1,5 +1,5 @@
 package com.qq.weixin.api.request;
-
+@SuppressWarnings("unused")
 public class GetUnlimitedRequest {
     private String access_token;
     private String scene;

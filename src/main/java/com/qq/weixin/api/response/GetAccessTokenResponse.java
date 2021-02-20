@@ -1,8 +1,8 @@
 package com.qq.weixin.api.response;
 
-import com.qq.weixin.api.WeixinError;
+
 @SuppressWarnings("unused")
-public class GetAccessTokenResponse extends WeixinError {
+public class GetAccessTokenResponse extends WeixinResponse {
     private String access_token;
     private int expires_in;
 

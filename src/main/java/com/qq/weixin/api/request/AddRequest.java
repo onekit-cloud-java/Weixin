@@ -1,5 +1,6 @@
 package com.qq.weixin.api.request;
 
+@SuppressWarnings({"unused", "FieldCanBeLocal"})
 public class AddRequest {
     private String access_token;
     private final String is_comm_nearby = "1";

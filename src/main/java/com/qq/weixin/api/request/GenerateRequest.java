@@ -1,5 +1,5 @@
 package com.qq.weixin.api.request;
-
+@SuppressWarnings("unused")
 public class GenerateRequest {
     private String access_token;
     private Jump_wxa jump_wxa;

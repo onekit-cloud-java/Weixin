@@ -1,8 +1,8 @@
 package com.qq.weixin.api.response;
 
-import com.qq.weixin.api.WeixinError;
+
 @SuppressWarnings("unused")
-public class GetPaidUnionIdResponse extends WeixinError {
+public class GetPaidUnionIdResponse extends WeixinResponse {
     private String unionid;
 
     public String getUnionid() {

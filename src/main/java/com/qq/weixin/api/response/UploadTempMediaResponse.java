@@ -1,8 +1,7 @@
 package com.qq.weixin.api.response;
 
-import com.qq.weixin.api.WeixinError;
-
-public class UploadTempMediaResponse extends WeixinError {
+@SuppressWarnings("unused")
+public class UploadTempMediaResponse extends WeixinResponse {
     private String type;
     private String mediaId;
     private Long createdAt;

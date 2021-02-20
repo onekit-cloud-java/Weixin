@@ -1,8 +1,8 @@
 package com.qq.weixin.api.response;
 
-import com.qq.weixin.api.WeixinError;
 
-public class GetListResponse extends WeixinError {
+@SuppressWarnings("unused")
+public class GetListResponse extends WeixinResponse {
     private Data data;
 
     public static class Data{

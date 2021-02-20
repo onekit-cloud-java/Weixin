@@ -1,8 +1,8 @@
 package com.qq.weixin.api.response;
 
-import com.qq.weixin.api.WeixinError;
+
 @SuppressWarnings("unused")
-public class GetPerformanceDataResponse extends WeixinError {
+public class GetPerformanceDataResponse extends WeixinResponse {
     private Body body;
     public static class Body{
         private Tables tables;

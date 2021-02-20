@@ -6,7 +6,7 @@ public class GetDailyRetainResponse {
     private Visit_uv_new visit_uv_new;
     private Visit_uv visit_uv;
 
-    public class Visit_uv{
+    public static class Visit_uv{
         private int key;
         private int value;
 
@@ -28,7 +28,7 @@ public class GetDailyRetainResponse {
 
     }
 
-    public class Visit_uv_new{
+    public static class Visit_uv_new{
         private int key;
         private int value;
 

@@ -1,10 +1,9 @@
 package com.qq.weixin.api.response;
 
-import com.qq.weixin.api.WeixinError;
 
 import java.util.ArrayList;
-
-public class GetPluginListResponse extends WeixinError {
+@SuppressWarnings("unused")
+public class GetPluginListResponse extends WeixinResponse {
     private ArrayList<Plugin_list> plugin_list;
 
     public static class Plugin_list {

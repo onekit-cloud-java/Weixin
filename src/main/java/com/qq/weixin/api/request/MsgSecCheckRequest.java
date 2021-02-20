@@ -1,9 +1,8 @@
 package com.qq.weixin.api.request;
-
 @SuppressWarnings("unused")
-public class DeleteRequest {
+public class MsgSecCheckRequest {
     private String access_token;
-    private String poi_id;
+    private String content;
 
     public String getAccess_token() {
         return access_token;
@@ -13,11 +12,11 @@ public class DeleteRequest {
         this.access_token = access_token;
     }
 
-    public String getPoi_id() {
-        return poi_id;
+    public String getContent() {
+        return content;
     }
 
-    public void setPoi_id(String poi_id) {
-        this.poi_id = poi_id;
+    public void setContent(String content) {
+        this.content = content;
     }
 }

@@ -1,25 +1,34 @@
 package api.mch.weixin.qq.com.v3;
 
-import api.mch.weixin.qq.com.v3.request.PayNoticeRequest;
-import api.mch.weixin.qq.com.v3.request.PayRefundRequest;
-import api.mch.weixin.qq.com.v3.request.PayRefundqueryRequest;
-import api.mch.weixin.qq.com.v3.request.PayTransactionsRequest;
+import api.mch.weixin.qq.com.v3.request.*;
 import api.mch.weixin.qq.com.v3.response.*;
 import com.qq.weixin.api.WeixinError;
 
 
 @SuppressWarnings("unused")
-public interface WeixinPayAPI {
+public interface WeixinpayAPI {
 
-    PayTransactionsResponse PayTransactions(PayTransactionsRequest payRequest) throws WeixinError;
+    PayTransactionsJsapiResponse payTransactions(PayTransactionsJsapiRequest payRequest) throws WeixinError;
 
-    PayNoticeResponse PayNotice(PayNoticeRequest payRequest) throws WeixinError;
+    PayTransactionsOrderqueryResponse payOrderquery(PayTransactionsOrderqueryRequest payTransactionsOrderqueryRequest) throws WeixinError;
 
-    PayRefundResponse PayRefund(PayRefundRequest payRequest) throws WeixinError;
+    PayTransactionsOrderqueryResponse merchantOrderquery(MerchantOrderqueryRequest merchantOrderqueryRequest) throws WeixinError;
 
-    PayRefundNoticeResponse PayRefundNotice() throws WeixinError;
+    void payTransactionsClose(PayTransactionsCloseRequest payTransactionsCloseRequest) throws WeixinError;
 
-    PayRefundqueryResponse PayRefundquery(PayRefundqueryRequest payRequest) throws WeixinError;
+    RefundResponse refund(RefundRequest refundRequest) throws WeixinError;
+
+    RefundDomesticResponse refundDomestic(RefundDomesticRequest refundDomesticRequest) throws WeixinError;
+
+    BillTradebillResponse billTradebill(BillTradebillRequest billTradebillRequest) throws WeixinError;
+
+    BillFundflowbillResponse billFundflowbill(BillFundflowbillRequest billFundflowbillRequest) throws WeixinError;
+
+    byte[] billdownload(String download_url,BilldownloadHeader billdownloadHeader) throws Exception;
+
+
+
+
 
 
 }

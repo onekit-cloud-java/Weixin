@@ -1,14 +1,32 @@
-package api.mch.weixin.qq.com.v3.request;
+package api.mch.weixin.qq.com.v3.notify.request;
 
 
 @SuppressWarnings("unused")
-public class PayNoticeRequest {
+public class NoticeRequest {
     private String id;
     private String create_time;
-    private String event_type;
+    private EventType event_type;
     private String resource_type;
     private String summary;
     private Resource resource;
+
+    public enum EventType{
+        TRANSACTIONSUCCESS("TRANSACTION.SUCCESS"),
+        REFUNDSUCCESS("REFUND.SUCCESS"),
+        REFUNDABNORMAL("REFUND.ABNORMAL"),
+        REFUNDCLOSED("REFUND.CLOSED");
+
+        private final String event_type;
+
+        EventType(String s) {
+            this.event_type = s;
+        }
+
+        public String getEvent_type() {
+            return event_type;
+        }
+
+    }
     public static class Resource{
         private String algorithm;
         private String ciphertext;
@@ -73,11 +91,11 @@ public class PayNoticeRequest {
         this.create_time = create_time;
     }
 
-    public String getEvent_type() {
+    public EventType getEvent_type() {
         return event_type;
     }
 
-    public void setEvent_type(String event_type) {
+    public void setEvent_type(EventType event_type) {
         this.event_type = event_type;
     }
 

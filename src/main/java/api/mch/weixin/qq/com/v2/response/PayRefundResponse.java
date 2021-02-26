@@ -1,4 +1,4 @@
-package api.mch.weixin.qq.com.v3.response;
+package api.mch.weixin.qq.com.v2.response;
 @SuppressWarnings("unused")
 public class PayRefundResponse {
     private String return_code;

@@ -1,8 +1,6 @@
-package api.mch.weixin.qq.com.v3.response;
-
-
+package api.mch.weixin.qq.com.v2.request;
 @SuppressWarnings("unused")
-public class PayNoticeResponse {
+public class PayTransactionsRequest {
     private String appid;
     private String mchid;
     private String description;
@@ -73,7 +71,7 @@ public class PayNoticeResponse {
     public static class Scene_info{
         private String payer_client_ip;
         private String device_id;
-        private Scene_info.Store_info store_info;
+        private Store_info store_info;
 
         public static class Store_info{
             private String id;
@@ -130,11 +128,11 @@ public class PayNoticeResponse {
             this.device_id = device_id;
         }
 
-        public Scene_info.Store_info getStore_info() {
+        public Store_info getStore_info() {
             return store_info;
         }
 
-        public void setStore_info(Scene_info.Store_info store_info) {
+        public void setStore_info(Store_info store_info) {
             this.store_info = store_info;
         }
     }

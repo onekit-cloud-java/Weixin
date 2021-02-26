@@ -1,7 +1,7 @@
-package api.mch.weixin.qq.com.v3.response;
+package api.mch.weixin.qq.com.v2.notify.request;
 
 @SuppressWarnings("unused")
-public class PayRefundNoticeResponse {
+public class RefundNoticeRequest {
     private String return_code;
     private String return_msg;
     private String appid;

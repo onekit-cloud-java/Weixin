@@ -1,6 +1,9 @@
 package api.mch.weixin.qq.com.v3.request;
+
+import java.util.List;
+
 @SuppressWarnings("unused")
-public class PayTransactionsRequest {
+public class PayTransactionsJsapiRequest {
     private String appid;
     private String mchid;
     private String description;
@@ -12,7 +15,8 @@ public class PayTransactionsRequest {
     private Amount amount;
     private Payer payer;
     private Detail detail;
-    private Scene_info scene_info;
+    private SceneInfo scene_info;
+    private SettleInfo settle_info;
 
     public static class Amount{
         private int total;
@@ -50,6 +54,63 @@ public class PayTransactionsRequest {
     public static class Detail{
         private int cost_price;
         private String invoice_id;
+        private List<GoodDetail> goods_detail;
+
+        public static class GoodDetail{
+            private String merchant_goods_id;
+            private String wechatpay_goods_id;
+            private String goods_name;
+            private int quantity;
+            private int unit_price;
+
+            public String getMerchant_goods_id() {
+                return merchant_goods_id;
+            }
+
+            public void setMerchant_goods_id(String merchant_goods_id) {
+                this.merchant_goods_id = merchant_goods_id;
+            }
+
+            public String getWechatpay_goods_id() {
+                return wechatpay_goods_id;
+            }
+
+            public void setWechatpay_goods_id(String wechatpay_goods_id) {
+                this.wechatpay_goods_id = wechatpay_goods_id;
+            }
+
+            public String getGoods_name() {
+                return goods_name;
+            }
+
+            public void setGoods_name(String goods_name) {
+                this.goods_name = goods_name;
+            }
+
+            public int getQuantity() {
+                return quantity;
+            }
+
+            public void setQuantity(int quantity) {
+                this.quantity = quantity;
+            }
+
+            public int getUnit_price() {
+                return unit_price;
+            }
+
+            public void setUnit_price(int unit_price) {
+                this.unit_price = unit_price;
+            }
+        }
+
+        public List<GoodDetail> getGoods_detail() {
+            return goods_detail;
+        }
+
+        public void setGoods_detail(List<GoodDetail> goods_detail) {
+            this.goods_detail = goods_detail;
+        }
 
         public int getCost_price() {
             return cost_price;
@@ -68,12 +129,12 @@ public class PayTransactionsRequest {
         }
     }
 
-    public static class Scene_info{
+    public static class SceneInfo{
         private String payer_client_ip;
         private String device_id;
-        private Store_info store_info;
+        private StoreInfo store_info;
 
-        public static class Store_info{
+        public static class StoreInfo{
             private String id;
             private String name;
             private String area_code;
@@ -128,12 +189,24 @@ public class PayTransactionsRequest {
             this.device_id = device_id;
         }
 
-        public Store_info getStore_info() {
+        public StoreInfo getStore_info() {
             return store_info;
         }
 
-        public void setStore_info(Store_info store_info) {
+        public void setStore_info(StoreInfo store_info) {
             this.store_info = store_info;
+        }
+    }
+
+    public static class SettleInfo{
+        private boolean profit_sharing;
+
+        public boolean isProfit_sharing() {
+            return profit_sharing;
+        }
+
+        public void setProfit_sharing(boolean profit_sharing) {
+            this.profit_sharing = profit_sharing;
         }
     }
 
@@ -225,11 +298,19 @@ public class PayTransactionsRequest {
         this.detail = detail;
     }
 
-    public Scene_info getScene_info() {
+    public SceneInfo getScene_info() {
         return scene_info;
     }
 
-    public void setScene_info(Scene_info scene_info) {
+    public void setScene_info(SceneInfo scene_info) {
         this.scene_info = scene_info;
+    }
+
+    public SettleInfo getSettle_info() {
+        return settle_info;
+    }
+
+    public void setSettle_info(SettleInfo settle_info) {
+        this.settle_info = settle_info;
     }
 }

@@ -36,7 +36,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WeixinSDK" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Weixin-Nut5G" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,8 +47,12 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GIT\github.com(cloud-java)\Weixin\src\main\java\api\mch\weixin\qq\com\v2" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.qq.weixin.api.request" />
+      <recent name="com.qq.weixin.api.response" />
+      <recent name="api.mch.weixin.qq.com.v3.request" />
+      <recent name="api.mch.weixin.qq.com.v3.response" />
+      <recent name="api.mch.weixin.qq.com.v3.notify.request" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="api.mch.weixin.qq.com.v3" />
@@ -56,13 +60,23 @@
       <recent name="game" />
       <recent name="com.qq.weixin.api" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="api.mch.weixin.qq.com.v3.request" />
-      <recent name="api.mch.weixin.qq.com.v3.response" />
-      <recent name="api.mch.weixin.qq.com.v3.notify.request" />
-      <recent name="com.qq.weixin.api.request" />
-      <recent name="com.qq.weixin.api.response" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GIT\github.com(cloud-java)\Weixin\src\main\java\api\mch\weixin\qq\com\v2" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="Weixin" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -116,6 +130,8 @@
       <workItem from="1614565472064" duration="1595000" />
       <workItem from="1614740970199" duration="695000" />
       <workItem from="1614824328230" duration="1178000" />
+      <workItem from="1614908630368" duration="3827000" />
+      <workItem from="1614929984769" duration="5222000" />
     </task>
     <servers />
   </component>
@@ -144,10 +160,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614331547457" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1614825368228">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1614935736754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614825368228" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614935736754" />
     <state x="544" y="305" width="488" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1614318950390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -156,14 +172,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="539" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614325567143" />
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614319750941">
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614932558348">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614319750941" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1614741065414">
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614932558348" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1614923773374">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614741065414" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614923773374" />
     <state width="1493" height="139" key="GridCell.Tab.0.bottom" timestamp="1614565135504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -184,5 +200,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="56" key="SettingsEditor/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1613634602415" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1614933318121">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/-3840.0.2560.1400@0.0.1536.824" timestamp="1614933318121" />
   </component>
 </project>

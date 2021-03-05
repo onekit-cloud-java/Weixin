@@ -50,27 +50,27 @@ public interface  WeixinAPI {
 
     byte[] getTempMedia(GetTempMediaRequest getTempMediaRequest) throws WeixinError;
 
-    WeixinResponse sendcustomerServiceMessage(SendcustomerServiceMessageRequest sendcustomerServiceMessageRequest);
+    void sendcustomerServiceMessage(SendcustomerServiceMessageRequest sendcustomerServiceMessageRequest);
 
-    WeixinResponse setTyping(SetTypingRequest setTypingRequest);
+    void setTyping(SetTypingRequest setTypingRequest);
 
     UploadTempMediaResponse uploadTempMedia(UploadTempMediaRequest uploadTempMediaRequest);
 
-    WeixinResponse uniformsend(UniformsendRequest uniformsendRequest);
+    void uniformsend(UniformsendRequest uniformsendRequest);
 
     CreateActivityIdResponse createActivityId(CreateActivityIdRequest createActivityIdRequest);
 
-    WeixinResponse setUpdatableMsg(SetUpdatableMsgRequest setUpdatableMsgRequest);
+    void setUpdatableMsg(SetUpdatableMsgRequest setUpdatableMsgRequest);
 
-    WeixinResponse applyPlugin(ApplyPluginRequest applyPluginRequest);
+    void applyPlugin(ApplyPluginRequest applyPluginRequest);
 
     GetPluginDevApplyListResponse getPluginDevApplyList(GetPluginDevApplyListRequest getPluginDevApplyListRequest) throws WeixinError;
 
     GetPluginListResponse getPluginList(GetPluginListRequest getPluginListRequest) throws WeixinError;
 
-    WeixinResponse setDevPluginApplyStatus(SetDevPluginApplyStatusRequest setDevPluginApplyStatusRequest) throws WeixinError;
+    void setDevPluginApplyStatus(SetDevPluginApplyStatusRequest setDevPluginApplyStatusRequest) throws WeixinError;
 
-    WeixinResponse unbindPlugin(UnbindPluginRequest unbindPluginRequest) throws WeixinError;
+    void unbindPlugin(UnbindPluginRequest unbindPluginRequest) throws WeixinError;
 
     AddResponse add(AddRequest addRequest);
 
@@ -78,7 +78,7 @@ public interface  WeixinAPI {
 
     GetListResponse getList(GetListRequest getListRequest) throws WeixinError;
 
-    WeixinResponse setShowStatus(SetShowStatusRequest setShowStatusRequest) throws WeixinError;
+    void setShowStatus(SetShowStatusRequest setShowStatusRequest) throws WeixinError;
 
     byte[] createQRCode(CreateQRCodeRequest createQRCodeRequest) throws WeixinError;
 
@@ -88,25 +88,60 @@ public interface  WeixinAPI {
 
     String generate(GenerateRequest generateRequest) throws WeixinError;
 
-    WeixinResponse imgSecCheck(ImgSecCheckRequest imgSecCheckRequest) ;
+    void imgSecCheck(ImgSecCheckRequest imgSecCheckRequest) throws WeixinError;
 
-    MediaCheckAsyncResponse mediaCheckAsync(MediaCheckAsyncRequest mediaCheckAsyncRequest);
+    MediaCheckAsyncResponse mediaCheckAsync(MediaCheckAsyncRequest mediaCheckAsyncRequest)throws WeixinError;
 
-    WeixinResponse msgSecCheck(MsgSecCheckRequest msgSecCheckRequest);
+    void msgSecCheck(MsgSecCheckRequest msgSecCheckRequest)throws WeixinError;
 
-    // addUserActionResponse addUserAction(addUserActionRequest addUserActionRequest);
+    GetOpenDataResponse getOpenData(GetOpenDataRequest getOpenDataRequest)throws WeixinError;
 
-    GetOpenDataResponse getOpenData(GetOpenDataRequest getOpenDataRequest);
+    GetStatisticsResponse getStatistics(GetStatisticsRequest getOpenDataRequest)throws WeixinError;
 
-    GetVoIPSignResponse getVoIPSign(GetVoIPSignRequest getVoIPSignRequest);
+    GetVoIPSignResponse getVoIPSign(GetVoIPSignRequest getVoIPSignRequest)throws WeixinError;
 
-    SendSmsResponse sendSms(SendSmsRequest sendSmsRequest);
+    void report(ReportRequest getVoIPSignRequest)throws WeixinError;
 
-    WeixinResponse aiCrop(AiCropRequest aiCropRequest);
+    SendSmsResponse sendSms(SendSmsRequest sendSmsRequest)throws WeixinError;
 
-    WeixinResponse scanQRCode(ScanQRCodeRequest scanQRCodeRequest);
+    CreateSendSmsTaskResponse createSendSmsTask(CreateSendSmsTaskRequest sendSmsRequest)throws WeixinError;
 
-    WeixinResponse superresolution(SuperresolutionRequest superresolutionRequest);
+    void aiCrop(AiCropRequest aiCropRequest) throws WeixinError;
+
+    void scanQRCode(ScanQRCodeRequest scanQRCodeRequest) throws WeixinError;
+
+    void superresolution(SuperresolutionRequest superresolutionRequest) throws WeixinError;
+
+    AbnormalConfirmResponse abnormalConfirm(AbnormalConfirmRequest abnormalConfirmRequest) throws WeixinError;
+
+    AddOrderResponse addOrder(AddOrderRequest addOrderRequest) throws WeixinError;
+
+    void addTip(AddTipRequest addTipRequest) throws WeixinError;
+
+    void bindAccount(BindAccountRequest bindAccountRequest) throws WeixinError;
+
+    CancelOrderResponse cancelOrder(CancelOrderrRequest cancelOrderrRequest) throws WeixinError;
+
+    GetAllImmeDeliveryResponse getAllImmeDelivery(GetAllImmeDeliveryRequest cancelOrderrRequest) throws WeixinError;
+
+    GetBindAccountResponse getBindAccount(GetBindAccountRequest cancelOrderrRequest) throws WeixinError;
+
+    GetOrderResponse getOrder(GetOrderRequest cancelOrderrRequest) throws WeixinError;
+
+    void mockUpdateOrder(MockUpdateOrderRequest cancelOrderrRequest) throws WeixinError;
+
+    OnOrderStatusResponse onOrderStatus(OnOrderStatusRequest cancelOrderrRequest) throws WeixinError;
+
+    void openDelivery(OpenDeliveryRequest cancelOrderrRequest) throws WeixinError;
+
+    PreAddOrderResponse preAddOrder(PreAddOrderRequest cancelOrderrRequest) throws WeixinError;
+
+    PreCancelOrderResponse preCancelOrder(PreCancelOrderRequest cancelOrderrRequest) throws WeixinError;
+
+    void realMockUpdateOrder(RealMockUpdateOrderRequest cancelOrderrRequest) throws WeixinError;
+
+    ReOrderResponse reOrder(ReOrderRequest cancelOrderrRequest) throws WeixinError;
+
 
 
 }

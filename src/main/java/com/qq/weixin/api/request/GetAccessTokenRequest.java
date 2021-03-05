@@ -3,8 +3,17 @@ package com.qq.weixin.api.request;
 public class GetAccessTokenRequest {
     private String appid;
     private String secret;
-    public enum grant_type{
+    private Grant_type grant_type;
+    public enum Grant_type{
         client_credential,
+    }
+
+    public Grant_type getGrant_type() {
+        return grant_type;
+    }
+
+    public void setGrant_type(Grant_type grant_type) {
+        this.grant_type = grant_type;
     }
 
     public String getAppid() {
